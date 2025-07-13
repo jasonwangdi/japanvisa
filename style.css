@@ -1,25 +1,26 @@
-
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
+    margin: 0;
 }
-input {
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+input, button {
     padding: 10px;
     font-size: 16px;
-    margin: 10px;
+    margin: 10px 0;
+    width: 90%;
+    max-width: 400px;
 }
-button {
-    padding: 10px 20px;
-    font-size: 16px;
+img {
+    max-width: 100%;
+    height: auto;
 }
-.ad-popup {
-    display: none;
-    position: relative;
-}
-#adPopup img {
-    width: 100%;
-    max-width: 300px;
+#adPopup, #verifySection, #finalAd, #downloadSection {
+    margin-top: 20px;
 }
 #countdown {
     font-size: 24px;
