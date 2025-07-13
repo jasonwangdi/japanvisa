@@ -1,40 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日本签证 eVISA 下载</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
-        <h1>日本签证 eVISA 下载</h1>
-        <input type="text" id="phone" placeholder="请输入手机号（11位数字）">
+        <h2>日本签证 eVISA 下载</h2>
+        <input type="text" id="phone" placeholder="请输入手机号" maxlength="11">
+        <br>
         <button onclick="showAd()">下一步</button>
 
-        <div id="adPopup" class="ad-popup">
+        <div id="adPopup" style="display:none;">
             <img src="ad.jpg" alt="广告图">
-            <div id="countdown">3</div>
+            <p>请稍候 <span id="countdown">3</span> 秒...</p>
         </div>
 
         <div id="verifySection" style="display:none;">
-            <input type="text" id="code" placeholder="请输入验证码（固定为0000）">
-            <button onclick="verifyCode()">验证</button>
+            <input type="text" id="code" placeholder="请输入验证码">
+            <br>
+            <button onclick="verifyCode()">确认</button>
         </div>
 
         <div id="finalAd" style="display:none;">
-            <a href="https://www.shiseido.co.jp/?srsltid=AfmBOooS0AtIc9IhEJrButULkBRJpweX22-kj1lC0Rm0BNnQlAcw9oVx" target="_blank">
-                <img src="ad.jpg" alt="点击跳转资生堂官网" style="max-width: 300px;">
+            <a href="https://shibu-cli.com/" target="_blank">
+                <img src="ad.jpg" alt="广告图">
             </a>
         </div>
 
-        <div id="downloadSection" style="display:none;">
-            <p>验证成功！点击下方按钮下载签证 PDF：</p>
-            <a href="visa.pdf" download>下载签证 PDF</a>
+        <div id="downloadSection" style="display:none; margin-top: 20px;">
+            <a href="visa.pdf" download style="font-size: 18px;">📄 下载电子签证 PDF</a>
         </div>
     </div>
-
     <script src="main.js"></script>
 </body>
 </html>

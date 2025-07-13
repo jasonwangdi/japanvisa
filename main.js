@@ -27,8 +27,8 @@ function verifyCode() {
     const code = document.getElementById('code').value;
     if (code === "0000") {
         document.getElementById("verifySection").style.display = "none";
-        document.getElementById("adPopup").style.display = "none";
-        document.getElementById("finalAd").style.display = "block";
+        const finalAd = document.getElementById("finalAd");
+        finalAd.style.display = "block";
         document.getElementById("downloadSection").style.display = "block";
     } else {
         alert("验证码错误，请输入0000");
