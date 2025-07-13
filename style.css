@@ -1,0 +1,28 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.ad-popup {
+    display: none;
+    position: relative;
+}
+#adPopup img {
+    width: 100%;
+    max-width: 300px;
+}
+#countdown {
+    font-size: 24px;
+    color: red;
+    margin-top: 10px;
+}
