@@ -1,29 +1,36 @@
+
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background: #fff;
+  margin: 0;
+  padding: 1em;
 }
 .container {
-    max-width: 500px;
-    margin: auto;
+  max-width: 480px;
+  margin: 0 auto;
 }
-input, button {
-    padding: 10px;
-    font-size: 16px;
-    margin: 10px 0;
-    width: 90%;
-    max-width: 400px;
+input {
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px 0;
 }
-img {
-    max-width: 100%;
-    height: auto;
+button {
+  padding: 10px 20px;
+  font-size: 18px;
 }
-#adPopup, #verifySection, #finalAd, #downloadSection {
-    margin-top: 20px;
+.ad-image {
+  max-width: 100%;
+  height: auto;
 }
-#countdown {
-    font-size: 24px;
-    color: red;
-    margin-top: 10px;
+.download-button {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #fff;
+  background: #007bff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
 }
