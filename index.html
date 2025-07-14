@@ -2,25 +2,33 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>日本签证 eVISA 下载</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>日本签证 eVISA 下载</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>日本签证 eVISA 下载</h1>
-        <input type="text" id="phoneInput" placeholder="请输入手机号（11位数字）" maxlength="11">
-        <button id="nextBtn" onclick="showAd()">下一步</button>
-        <div id="adContainer" style="display:none;">
-            <a href="https://shibu-cli-en.com/cn/" target="_blank">
-                <img src="ad.jpg" id="adImage" alt="广告" />
-            </a>
-            <div id="downloadContainer" style="margin-top: 20px;">
-                <a href="visa.pdf" download class="download-btn">点击下载签证 PDF</a>
-            </div>
-        </div>
-    </div>
-    <script src="main.js"></script>
+  <div class="container">
+    <h1>日本签证 eVISA 下载</h1>
+    <input type="text" id="phone" placeholder="请输入手机号（11位数字）" maxlength="11"/>
+    <button onclick="startVerification()">下一步</button>
+  </div>
+
+  <div class="ad-overlay" id="ad1" style="display:none;">
+    <img src="ad.jpg" alt="广告图" class="ad-image" onclick="window.open('https://shibu-cli-en.com/cn/', '_blank');"/>
+    <div id="countdown">3</div>
+  </div>
+
+  <div class="container" id="code-section" style="display:none;">
+    <input type="text" id="code" placeholder="请输入验证码（固定为0000）" maxlength="4"/>
+    <button onclick="validateCode()">验证</button>
+  </div>
+
+  <div class="ad-overlay" id="ad2" style="display:none;">
+    <img src="ad.jpg" alt="广告图" class="ad-image" onclick="window.open('https://shibu-cli-en.com/cn/', '_blank');"/>
+    <a class="download-btn" href="visa.pdf" download>点击下载签证 PDF</a>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
